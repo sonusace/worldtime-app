@@ -37,7 +37,6 @@
 				    <!-- Environment Parameter -->
 				    <environment>Sandbox</environment>
 				    <applicationName>World-timeZoneApp</applicationName>
-				    <businessGroup>wipro</businessGroup>
 				    <workerType>0.1 vCores</workerType>
 				</cloudHubDeployment>
 				</configuration>

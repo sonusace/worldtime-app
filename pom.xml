@@ -36,8 +36,8 @@
 				    <password>V20@project#</password>
 				    <!-- Environment Parameter -->
 				    <environment>Sandbox</environment>
-				    <applicationName>World-timeZoneApp</applicationName>
-				    <workerType>0.1 vCores</workerType>
+				    <applicationName>timezone-service</applicationName>
+				    <workerType>Micro</workerType>
 				</cloudHubDeployment>
 				</configuration>
 			</plugin>

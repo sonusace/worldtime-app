@@ -18,7 +18,7 @@
 
 
 		<app.runtime>4.2.1</app.runtime>
-		<mule.maven.plugin.version>3.6.2</mule.maven.plugin.version>
+		<mule.maven.plugin.version>3.2.7</mule.maven.plugin.version>
 	</properties>
 
 	<build>
@@ -29,18 +29,15 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-				 <cloudHubDeployment>
-				 			<muleVersion>4.2.1</muleVersion>
-                              <username>sonusace5</username>
-                              <password>V20@project#</password>
-                              <applicationName>timezone-service</applicationName>
-                              <target>local</target>
-                              <targetType>server</targetType>
-                              <environment>sandbox</environment>
-                              <redeploy>true</redeploy>
-                              <workers>1</workers>
-                              <workerType>Micro</workerType>
-                   </cloudHubDeployment>
+					<cloudHubDeployment>
+						<username>sonusace5</username>
+						<password>V20@project#</password>
+						<environment>sandbox</environment>
+						<workers>1</workers>
+						<workerType>Micro</workerType>
+						<applicationName>timezone-service</applicationName>
+						<muleVersion>4.2.1</muleVersion>
+					</cloudHubDeployment>
 				</configuration>
 			</plugin>
 		</plugins>

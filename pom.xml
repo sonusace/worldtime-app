@@ -28,17 +28,18 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-				<cloudHubDeployment>
-				    <uri>https://anypoint.mulesoft.com</uri>
-				    <muleVersion>4.1.4</muleVersion>
-				    <!-- Deploy User Parameter -->
-				    <username>sonusace5</username>
-				    <password>V20@project#</password>
-				    <!-- Environment Parameter -->
-				    <environment>Sandbox</environment>
-				    <applicationName>timezone-service</applicationName>
-				    <workerType>Micro</workerType>
-				</cloudHubDeployment>
+				 <cloudHubDeployment>
+				 			<muleVersion>4.2.1</muleVersion>
+                              <username>sonusace5</username>
+                              <password>V20@project#</password>
+                              <applicationName>timezone-service</applicationName>
+                              <target>local</target>
+                              <targetType>server</targetType>
+                              <environment>sandbox</environment>
+                              <redeploy>true</redeploy>
+                              <workers>1</workers>
+                              <workerType>Micro</workerType>
+                   </cloudHubDeployment>
 				</configuration>
 			</plugin>
 		</plugins>
